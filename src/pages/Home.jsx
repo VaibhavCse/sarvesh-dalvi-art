@@ -3,7 +3,7 @@ import { artworks, WHATSAPP_URL } from '../data/artworks';
 import ArtworkCard from '../components/ArtworkCard';
 import Hero from "../images/home/home.jpeg";
 import artist from "../images/our_story/artist.jpg";
-import Custom from "../images/home/custom.jpeg";
+import Custom from "../images/home/custom.png";
 
 const MARQUEE = ['Hanuman', 'Ram Vivah', 'Radha Krishna', 'Lord Shiva', 'Buddha', 'Mahabharata', 'Divine Weddings', 'Oil Paintings'];
 
@@ -185,7 +185,7 @@ export default function Home() {
               <div className="divider" />
               <p>Have a specific deity, scene, or sacred story in mind? Sarvesh accepts a limited number of commissions each year — each crafted with the same devotion and precision as his original works.</p>
               <ul style={{ paddingLeft: '1.25rem', color: 'var(--text-mid)', fontSize: '0.9rem', lineHeight: 1.9, marginTop: '1rem', marginBottom: '1.75rem' }}>
-                <li>Custom size — from 2×3 ft to 5×7.5 ft</li>
+                <li>Custom size — from 3/2 ft to 7.5/5 ft</li>
                 <li>Inspired by temples, mythology, and devotional themes</li>
                 <li>Certificate of Authenticity included</li>
                 <li>Free delivery pan India</li>
@@ -204,7 +204,7 @@ export default function Home() {
                 className="img-frame"
                 style={{
                   width: "100%",
-                  height: "800px",
+                  height: "450px",
                   objectFit: "cover",
                   objectPosition: "center",
                   borderRadius: "12px",
