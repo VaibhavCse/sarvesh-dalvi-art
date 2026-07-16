@@ -1,6 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { COMMISSION_SIZES, COMMISSION_WA } from '../data/artworks';
+import commission_main from "../images/commission/commission_main.png";
+import commission_1 from "../images/commission/commission_1.jpeg";
+import commission_2 from "../images/commission/commission_2.jpeg";
+import commission_3 from "../images/commission/commission_3.jpeg";
+import commission_4 from "../images/commission/commission_4.jpeg";
+import commission_5 from "../images/commission/commission_5.jpeg";
+import commission_6 from "../images/commission/commission_6.jpeg";
 
 const ACCORDIONS = [
   {
@@ -68,12 +75,20 @@ export default function Commission() {
             </div>
 
             <div>
-              <div
-                className="img-frame"
-                style={{ background: 'linear-gradient(145deg, #C4956A22, #B5541E33)', fontSize: '5rem', height: '380px' }}
-                aria-hidden="true"
-              >
-                ✍️
+              <div>
+                <img
+                  src={commission_main}
+                  alt="Custom Commission Artwork"
+                  className="img-frame"
+                  style={{
+                    width: "100%",
+                    height: "380px",
+                    objectFit: "cover",
+                    borderRadius: "12px",
+                    border: "1px solid var(--border)",
+                    display: "block"
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -82,15 +97,33 @@ export default function Commission() {
           <div style={{ marginTop: '4rem' }}>
             <p className="section-tag" style={{ marginBottom: '1rem' }}>Sample Commissioned Works</p>
             <div className="commission-scroll" aria-label="Sample commissioned paintings">
-              {['🙏', '🕌', '🏔️', '📖', '🕌', '🐘'].map((e, i) => (
+              {[
+                commission_1,
+                commission_2,
+                commission_3,
+                commission_4,
+                commission_5,
+                commission_6,
+              ].map((img, i) => (
                 <div
                   key={i}
                   className="commission-img-card"
-                  style={{ background: `linear-gradient(145deg, #C4956A${22 + i * 8}`, fontSize: '2.5rem' }}
-                  role="img"
-                  aria-label={`Sample commission ${i + 1}`}
+                  style={{
+                    overflow: "hidden",
+                    borderRadius: "10px",
+                    border: "1px solid var(--border)"
+                  }}
                 >
-                  {e}
+                  <img
+                    src={img}
+                    alt={`Commission Sample ${i + 1}`}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      display: "block"
+                    }}
+                  />
                 </div>
               ))}
             </div>

@@ -1,6 +1,9 @@
 import { useNavigate, Link } from 'react-router-dom';
 import { artworks, WHATSAPP_URL } from '../data/artworks';
 import ArtworkCard from '../components/ArtworkCard';
+import Hero from "../images/home/home.jpeg";
+import artist from "../images/our_story/artist.jpg";
+import Custom from "../images/home/custom.jpeg";
 
 const MARQUEE = ['Hanuman', 'Ram Vivah', 'Radha Krishna', 'Lord Shiva', 'Buddha', 'Mahabharata', 'Divine Weddings', 'Oil Paintings'];
 
@@ -44,12 +47,24 @@ export default function Home() {
           </div>
 
           <div className="hero-img-wrap">
-            <div className="hero-img-frame" style={{ background: 'linear-gradient(145deg, #C4956A33, #B5541E55)', fontSize: '6rem' }}>
-              🙏
-            </div>
+            <img
+              src={Hero}
+              alt="Featured Artwork"
+              className="hero-img-frame"
+              style={{
+                width: "100%",
+                height: "650px",
+                objectFit: "cover",
+                borderRadius: "16px",
+                display: "block",
+                border: "1px solid var(--border)"
+              }}
+            />
+
             <div className="hero-img-accent" aria-hidden="true" />
+
             <div className="hero-tag">
-              <strong>50+</strong>Original Works
+              <strong>30+</strong> Original Works
             </div>
           </div>
         </div>
@@ -112,7 +127,21 @@ export default function Home() {
         <div className="container">
           <div className="two-col">
             <div className="img-frame-wrapper">
-              <div className="img-frame" style={{ background: 'linear-gradient(145deg, #C4956A22, #B5541E33)', fontSize: '5rem', height: '460px' }}>🎨</div>
+              <img
+                src={artist}
+                alt="Sarvesh Dalvi"
+                className="img-frame"
+                style={{
+                  width: "100%",
+                  height: "460px",
+                  objectFit: "cover",
+                  objectPosition: "top",
+                  borderRadius: "12px",
+                  display: "block",
+                  border: "1px solid var(--border)"
+                }}
+              />
+
               <div className="img-frame-accent" aria-hidden="true" />
               <div className="img-frame-accent2" aria-hidden="true" />
             </div>
@@ -169,7 +198,21 @@ export default function Home() {
               </div>
             </div>
             <div className="img-frame-wrapper">
-              <div className="img-frame" style={{ background: 'linear-gradient(145deg, #AA8A6A22, #B5541E33)', fontSize: '5rem', height: '420px' }}>✍️</div>
+              <img
+                src={Custom}
+                alt="Custom Commission Painting"
+                className="img-frame"
+                style={{
+                  width: "100%",
+                  height: "800px",
+                  objectFit: "cover",
+                  objectPosition: "center",
+                  borderRadius: "12px",
+                  display: "block",
+                  border: "1px solid var(--border)"
+                }}
+              />
+
               <div className="img-frame-accent" aria-hidden="true" />
             </div>
           </div>

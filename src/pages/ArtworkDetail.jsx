@@ -59,28 +59,19 @@ export default function ArtworkDetail() {
           <div className="detail-layout">
             {/* Left – Image */}
             <div>
-              <div
+              <img
+                src={artwork.image}
+                alt={artwork.title}
                 className="detail-img-main"
-                style={{ background: `linear-gradient(145deg, ${artwork.color}33, ${artwork.color}77)`, fontSize: '7rem' }}
-                role="img"
-                aria-label={`Painting: ${artwork.title}`}
-              >
-                {artwork.emoji}
-              </div>
-              <div className="detail-thumbs" aria-label="Additional views">
-                {[1, 2, 3].map((n) => (
-                  <div
-                    key={n}
-                    className={`detail-thumb${n === 1 ? ' active' : ''}`}
-                    style={{ background: `linear-gradient(145deg, ${artwork.color}22, ${artwork.color}55)`, fontSize: '1.4rem' }}
-                    role="button"
-                    tabIndex={0}
-                    aria-label={`View ${n}`}
-                  >
-                    {artwork.emoji}
-                  </div>
-                ))}
-              </div>
+                style={{
+                  width: "100%",
+                  height: "650px",
+                  objectFit: "cover",
+                  borderRadius: "12px",
+                  display: "block",
+                  border: "1px solid var(--border)"
+                }}
+              />
             </div>
 
             {/* Right – Info */}

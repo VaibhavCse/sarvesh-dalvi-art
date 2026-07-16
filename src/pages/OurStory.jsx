@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import sarvesh from "../images/our_story/artist.jpg";
 
 export default function OurStory() {
   const navigate = useNavigate();
@@ -19,13 +20,20 @@ export default function OurStory() {
           {/* Main story */}
           <div className="two-col">
             <div className="img-frame-wrapper">
-              <div
+              <img
+                src={sarvesh}
+                alt="Sarvesh Dalvi"
                 className="img-frame"
-                style={{ background: 'linear-gradient(145deg, #C4956A22, #B5541E33)', fontSize: '5.5rem', height: '500px' }}
-                role="img" aria-label="Sarvesh Dalvi portrait"
-              >
-                🎨
-              </div>
+                style={{
+                  width: "100%",
+                  height: "500px",
+                  objectFit: "cover",
+                  borderRadius: "12px",
+                  display: "block",
+                  border: "1px solid var(--border)"
+                }}
+              />
+
               <div className="img-frame-accent" aria-hidden="true" />
               <div className="img-frame-accent2" aria-hidden="true" />
             </div>
@@ -36,9 +44,11 @@ export default function OurStory() {
               <div className="blockquote">
                 <p>"The divine has always been my teacher. I just try to listen closely enough to paint what I hear."</p>
               </div>
-              <p>Sarvesh Dalvi is a self-taught contemporary Indian painter based in Maharashtra. His work has captured the hearts of thousands across Instagram and beyond, known for its extraordinary devotional depth and technical mastery in oil painting.</p>
-              <p>Growing up in a family with strong spiritual roots, Sarvesh was drawn to the stories of the Ramayana, Mahabharata, and the Bhagavata Purana from a young age. What began as a fascination with form and colour slowly evolved into a lifelong calling — to make the divine visible through oil on canvas.</p>
-              <p>Each painting begins not at the easel, but in study. Hours of reading scripture, visiting temples, and sitting in prayer precede the first sketch. By the time the brush touches canvas, Sarvesh already knows the feeling he wants the painting to carry.</p>
+              <p>My artistic journey began in 2020 during the COVID-19 lockdown while I was pursuing my engineering degree. What started as a way to spend my time soon became my true passion. I began with simple graphite pencil sketches, spending countless hours learning the fundamentals of drawing, shading, and observation.</p>
+              <p>After two years of dedicated practice, I transitioned to color pencil art, where I explored realism and developed a deeper understanding of color, texture, and detail. Every artwork helped me grow as a self-taught artist and strengthened my confidence in expressing emotions through art.</p>
+              <p>In 2024, I discovered my true calling in oil painting. The richness, depth, and timeless nature of the medium opened a new world of creative possibilities. I found myself deeply drawn to Indian mythology, and since then, I have devoted my work to creating large-scale mythological paintings that combine traditional stories with my own artistic vision.</p>
+              <p>For me, mythology is more than just a subject—it is a source of inspiration, imagination, and spiritual connection. Each painting allows me to breathe new life into ancient tales, portraying divine characters and sacred moments through my own perspective. These artworks give me complete creative freedom and have become an inseparable part of my life.</p>
+              <p>As a self-taught artist, my journey has been built on curiosity, patience, and continuous learning. Every painting reflects not only my skills but also my passion for storytelling, culture, and the timeless beauty of Indian mythology.</p>
               <div className="stats-grid">
                 {[
                   { num: '50+', label: 'Original Works' },

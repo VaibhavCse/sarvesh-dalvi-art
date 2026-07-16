@@ -231,8 +231,26 @@ function SizePickerModal({ artwork, onClose }) {
 
         {/* Artwork header */}
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '1.5rem', paddingBottom: '1.25rem', borderBottom: '1px solid var(--border)' }}>
-          <div style={{ width: '60px', height: '72px', borderRadius: '6px', flexShrink: 0, background: `linear-gradient(145deg, ${artwork.color}33, ${artwork.color}88)`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.8rem', border: '1px solid var(--border)' }}>
-            {artwork.emoji}
+          <div
+            style={{
+              width: "60px",
+              height: "72px",
+              borderRadius: "6px",
+              overflow: "hidden",
+              flexShrink: 0,
+              border: "1px solid var(--border)"
+            }}
+          >
+            <img
+              src={artwork.image}
+              alt={artwork.title}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                display: "block"
+              }}
+            />
           </div>
           <div>
             <p style={{ fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--rust)', fontWeight: 600, marginBottom: '0.2rem' }}>
@@ -299,8 +317,18 @@ function PrintCard({ artwork }) {
         aria-label={`View print: ${artwork.title}`}
       >
         <div className="card-img-wrap">
-          <div className="card-img" style={{ background: `linear-gradient(145deg, ${artwork.color}33, ${artwork.color}88)`, fontSize: '3.5rem' }} aria-hidden="true">
-            {artwork.emoji}
+          <div className="card-img">
+            <img
+              src={artwork.image}
+              alt={artwork.title}
+              loading="lazy"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                display: "block"
+              }}
+            />
           </div>
           <div className="card-overlay" aria-hidden="true" />
           <span className="card-tag">Print</span>
@@ -492,8 +520,17 @@ export function PrintDetail() {
 
         <div className="detail-layout">
           <div>
-            <div className="detail-img-main" style={{ background: `linear-gradient(145deg, ${artwork.color}33, ${artwork.color}77)`, fontSize: '7rem' }} role="img" aria-label={`Print: ${artwork.title}`}>
-              {artwork.emoji}
+            <div className="detail-img-main">
+              <img
+                src={artwork.image}
+                alt={artwork.title}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  display: "block"
+                }}
+              />
             </div>
           </div>
 

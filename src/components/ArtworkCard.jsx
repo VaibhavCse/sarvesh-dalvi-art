@@ -35,12 +35,18 @@ export default function ArtworkCard({ artwork, isPrint = false }) {
     >
       <div className="card-img-wrap">
         {/* Placeholder — replace src with artwork.imageUrl when available */}
-        <div
-          className="card-img"
-          style={{ background: `linear-gradient(145deg, ${artwork.color}33, ${artwork.color}88)`, fontSize: '3.5rem' }}
-          aria-hidden="true"
-        >
-          {artwork.emoji}
+        <div className="card-img">
+          <img
+            src={artwork.image}
+            alt={artwork.title}
+            loading="lazy"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              display: "block"
+            }}
+          />
         </div>
 
         <div className="card-overlay" aria-hidden="true" />
