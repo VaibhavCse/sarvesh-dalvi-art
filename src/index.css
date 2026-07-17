@@ -122,7 +122,7 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; line-height: 1.2; }
 /* Dropdown */
 .nav-dropdown {
   position: absolute;
-  top: calc(100% + 8px);
+  top: calc(100% + 0px);
   left: 0;
   background: var(--warm-white);
   border: 1px solid var(--border);

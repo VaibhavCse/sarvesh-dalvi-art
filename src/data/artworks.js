@@ -1,17 +1,17 @@
-import Shiv_parvati_kalyanam from "../images/originals/Shiv_parvati_kalyanam.jpeg";
-import Vishwaroop from "../images/originals/Vishwaroop.jpeg";
-import Srinivasa_Kalyanam from "../images/originals/Srinivasa_Kalyanam.jpeg";
-import Ganesha_A_Childs_Innocent_Prayer from "../images/originals/Ganesha_child.jpeg";
-import Lord_Venkateswara from "../images/originals/Lord_Venkateswara.jpeg";
-import Krishna_Balarama_in_Vrindavan from "../images/originals/Krishna_Balarama.jpeg";
-import Hanuman_Eternal_Devotion from "../images/originals/Hanuman_Eternal_Devotion.jpeg";
-import Annapurna_Devi from "../images/originals/Annapurna_Devi.jpeg";
-import Krishna_Under_the_Moonlight from "../images/originals/Krishna_Under_the_Moonlight.jpeg";
-import Godess_Annapurna from "../images/originals/Godess_Annapurna.jpeg";
-import Lord_Venkateswara_Supreme_Protector from "../images/originals/Lord_Venkateswara_The_Supreme_Protector.jpeg";
-import Child_Hanuman_Innocent_Devotion from "../images/originals/Child_Hanuman.jpeg";
+import Shiv_parvati_kalyanam from "../images/originals/Shiv_parvati_kalyanam.jpg";
+import Vishwaroop from "../images/originals/Vishwaroop.jpg";
+import Srinivasa_Kalyanam from "../images/originals/Srinivasa_Kalyanam.jpg";
+import Ganesha_A_Childs_Innocent_Prayer from "../images/originals/Ganesha_child.jpg";
+import Lord_Venkateswara from "../images/originals/Lord_Venkateswara.jpg";
+import Krishna_Balarama_in_Vrindavan from "../images/originals/Krishna_Balarama.jpg";
+import Hanuman_Eternal_Devotion from "../images/originals/Hanuman_Eternal_Devotion.jpg";
+import Annapurna_Devi from "../images/originals/Annapurna_Devi.jpg";
+import Krishna_Under_the_Moonlight from "../images/originals/Krishna_Under_the_Moonlight.jpg";
+import Godess_Annapurna from "../images/originals/Godess_Annapurna.jpg";
+import Lord_Venkateswara_Supreme_Protector from "../images/originals/Lord_Venkateswara_The_Supreme_Protector.jpg";
+import Child_Hanuman_Innocent_Devotion from "../images/originals/Child_Hanuman.jpg";
 import Radha_Krishna_Divine_Swing from "../images/originals/Radha_Krishna.png";
-import Ardhanarishvara_Divine_Union from "../images/originals/Ardhanarishvara.jpeg";
+import Ardhanarishvara_Divine_Union from "../images/originals/Ardhanarishvara.jpg";
 
 
 // ── PRINT TYPES & SIZES (Sarvesh's exact pricing) ────────────────────────────

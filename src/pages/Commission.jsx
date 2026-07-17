@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { COMMISSION_SIZES, COMMISSION_WA } from '../data/artworks';
 import commission_main from "../images/commission/commission_main.png";
-import commission_1 from "../images/commission/commission_1.jpeg";
-import commission_2 from "../images/commission/commission_2.jpeg";
-import commission_3 from "../images/commission/commission_3.jpeg";
-import commission_4 from "../images/commission/commission_4.jpeg";
-import commission_5 from "../images/commission/commission_5.jpeg";
-import commission_6 from "../images/commission/commission_6.jpeg";
+import commission_1 from "../images/commission/commission_1.jpg";
+import commission_2 from "../images/commission/commission_2.jpg";
+import commission_3 from "../images/commission/commission_3.jpg";
+import commission_4 from "../images/commission/commission_4.jpg";
+import commission_5 from "../images/commission/commission_5.jpg";
+import commission_6 from "../images/commission/commission_6.jpg";
 
 const ACCORDIONS = [
   {

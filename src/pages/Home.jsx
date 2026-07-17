@@ -1,7 +1,7 @@
 import { useNavigate, Link } from 'react-router-dom';
 import { artworks, WHATSAPP_URL } from '../data/artworks';
 import ArtworkCard from '../components/ArtworkCard';
-import Hero from "../images/home/home.jpeg";
+import Hero from "../images/home/home.jpg";
 import artist from "../images/our_story/artist.jpg";
 import Custom from "../images/home/custom.png";
 
