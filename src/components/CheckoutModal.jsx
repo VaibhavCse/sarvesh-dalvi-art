@@ -108,7 +108,7 @@ export default function CheckoutModal() {
     }
 
     const options = {
-      key:         'rzp_test_TBWMUBjKgvPwEn',  // ← replace with live key when going live
+      key:         'rzp_live_TEesr2w67Mil8W',  // ← replace with live key when going live
       amount:      total * 100,                  // in paise
       currency:    'INR',
       name:        'Sarvesh Dalvi Art',
