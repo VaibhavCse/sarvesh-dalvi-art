@@ -61,7 +61,7 @@ export default function Home() {
               }}
             />
 
-            <div className="hero-img-accent" aria-hidden="true" />
+            {/* <div className="hero-img-accent" aria-hidden="true" /> */}
 
             <div className="hero-tag">
               <strong>30+</strong> Original Works
@@ -142,8 +142,8 @@ export default function Home() {
                 }}
               />
 
-              <div className="img-frame-accent" aria-hidden="true" />
-              <div className="img-frame-accent2" aria-hidden="true" />
+              {/* <div className="img-frame-accent" aria-hidden="true" />
+              <div className="img-frame-accent2" aria-hidden="true" /> */}
             </div>
             <div className="text-content">
               <p className="section-tag">The Artist</p>
@@ -213,7 +213,7 @@ export default function Home() {
                 }}
               />
 
-              <div className="img-frame-accent" aria-hidden="true" />
+              {/* <div className="img-frame-accent" aria-hidden="true" /> */}
             </div>
           </div>
         </div>

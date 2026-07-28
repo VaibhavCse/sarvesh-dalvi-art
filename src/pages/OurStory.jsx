@@ -35,8 +35,8 @@ export default function OurStory() {
                   border: '1px solid var(--border)',
                 }}
               />
-              <div className="img-frame-accent"  aria-hidden="true" />
-              <div className="img-frame-accent2" aria-hidden="true" />
+              {/* <div className="img-frame-accent"  aria-hidden="true" />
+              <div className="img-frame-accent2" aria-hidden="true" /> */}
             </div>
 
             <div className="text-content">
