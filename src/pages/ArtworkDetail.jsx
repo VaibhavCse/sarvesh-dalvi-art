@@ -58,18 +58,31 @@ export default function ArtworkDetail() {
 
           <div className="detail-layout">
             {/* Left – Image */}
-            <div>
+            <div
+              style={{
+                width: "100%",
+                minHeight: "650px",
+                maxHeight: "800px",
+                background: "#faf8f5",
+                border: "1px solid var(--border)",
+                borderRadius: "12px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: "1.5rem",
+                overflow: "hidden",
+              }}
+            >
               <img
                 src={artwork.image}
                 alt={artwork.title}
-                className="detail-img-main"
                 style={{
-                  width: "100%",
-                  height: "650px",
-                  objectFit: "cover",
-                  borderRadius: "12px",
+                  maxWidth: "100%",
+                  maxHeight: "760px",
+                  width: "auto",
+                  height: "auto",
+                  objectFit: "contain",
                   display: "block",
-                  border: "1px solid var(--border)"
                 }}
               />
             </div>
